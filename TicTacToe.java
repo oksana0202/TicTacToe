@@ -98,9 +98,9 @@ class TicTacToe {
         if ((table[0][0] == dot && table[1][1] == dot && table[2][2] == dot) ||
             (table[2][0] == dot && table[1][1] == dot && table[0][2] == dot))
             return true;
-            if (table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) return true;
-            if (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch) return true;
-        return false;
+        if (table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) return true;
+        if (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch) return true;
+            return false;
 }
 
     boolean isCellValid(int x, int y) {
