@@ -92,15 +92,11 @@ class TicTacToe {
 
     boolean checkWin(char dot) {
     for (int i = 0; i < 3; i++)
-        if ((table[i][0] == dot && table[i][1] == dot &&
-            table[i][2] == dot) ||
-            (table[0][i] == dot && table[1][i] == dot &&
-            table[2][i] == dot))
+        if ((table[i][0] == dot && table[i][1] == dot && table[i][2] == dot) ||
+            (table[0][i] == dot && table[1][i] == dot && table[2][i] == dot))
             return true;
-        if ((table[0][0] == dot && table[1][1] == dot &&
-            table[2][2] == dot) ||
-            (table[2][0] == dot && table[1][1] == dot &&
-            table[0][2] == dot))
+        if ((table[0][0] == dot && table[1][1] == dot && table[2][2] == dot) ||
+            (table[2][0] == dot && table[1][1] == dot && table[0][2] == dot))
             return true;
             if (table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) return true;
             if (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch) return true;
